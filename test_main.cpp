@@ -1,6 +1,9 @@
 ﻿#include "lib.h"
+#include "gtest/gtest.h"
 
-int test()
+TEST(test_version_valid_1, test_version_valid)
 {
-	return (version() > 0);
+	ASSERT_GT(version(), 0);
 }
+
+

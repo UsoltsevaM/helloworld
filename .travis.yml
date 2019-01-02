@@ -8,4 +8,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uUsoltsevaM:$BINTRAY_API_KEY "https://api.bintray.com/12345276/helloworld/helloworld_task/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -T helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uUsoltsevaM:$BINTRAY_API_KEY "https://api.bintray.com/content/UsoltsevaM/helloworld/$TRAVIS_BUILD_NUMBER/helloworld-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"

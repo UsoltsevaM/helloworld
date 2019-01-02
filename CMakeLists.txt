@@ -2,8 +2,6 @@
 
 project(helloworld VERSION 0.0.1)
 
-find_package(GTest REQUIRED)
-
 configure_file(version.h.in version.h)
 
 add_executable(helloworld_cli main.cpp)

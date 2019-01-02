@@ -16,6 +16,11 @@ set_target_properties(helloworld_cli test_main_cli PROPERTIES
   COMPILE_OPTIONS -Wpedantic -Wall -Wextra
 )
 
+set_target_properties(test_main_cli PROPERTIES
+  COMPILE_OPTIONS -c
+)
+
+
 target_link_libraries(helloworld_cli helloworld)
 
 target_link_libraries(test_main_cli helloworld)
